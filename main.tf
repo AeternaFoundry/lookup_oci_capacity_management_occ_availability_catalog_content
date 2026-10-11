@@ -1,0 +1,6 @@
+data "oci_capacity_management_occ_availability_catalog_content" "capacity_management_occ_availability_catalog_content_lookup" {
+  for_each = var.capacity_management_occ_availability_catalog_content_lookup
+
+  occ_availability_catalog_id = each.value.occ_availability_catalog_id
+}
+
